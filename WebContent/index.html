@@ -15,7 +15,9 @@
 	<div class="container" ng-controller="homeCtrl">
 		<div class="well-sm">
 			<h1 ng-bind="title"></h1>
+			<input ng-model="name" />
 		</div>
+		<button class="btn btn-info" ng-click="clickMe()">Click Me</button>
 	</div>
 	<script src="AngularApp/app/cart/cart.js"></script>
 	<script src="AngularApp/app/home/home.js"></script>
