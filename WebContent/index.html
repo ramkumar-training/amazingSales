@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="amazingSales">
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome to Amazing Sales</title>
+<link href="AngularApp/content/css/bootstrap.css" rel="stylesheet" />
+<link href="AngularApp/content/css/bootstrap-theme.css" rel="stylesheet" />
+
+<script src="AngularApp/vendor/bootstrap.js"></script>
+<script src="AngularApp/vendor/jquery-2.2.0.js"></script>
+<script src="AngularApp/vendor/angular.min.js"></script>
+
 </head>
 <body>
-
-</body>
+	<div class="container" ng-controller="homeCtrl">
+		<div class="well-sm">
+			<h1 ng-bind="title"></h1>
+		</div>
+	</div>
+	<script src="AngularApp/app/cart/cart.js"></script>
+	<script src="AngularApp/app/home/home.js"></script>
+	<script src="AngularApp/app/home/homeCtrl.js"></script>
+	<script src="AngularApp/app/login/login.js"></script>
+	<script src="AngularApp/app/register/register.js"></script>
+	<script src="AngularApp/app/app.js"></script>
+	</body>
 </html>
