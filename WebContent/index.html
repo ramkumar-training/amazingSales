@@ -12,18 +12,22 @@
 
 </head>
 <body>
-	<div class="container" ng-controller="homeCtrl">
-		<div class="well-sm">
-			<h1 ng-bind="title"></h1>
-			<input ng-model="name" />
+	<div class="container" ng-controller="mainCtrl">
+		<div ng-include="navigationTemplate"></div>
+		<div ng-controller="homeCtrl">
+			<div class="well-sm">
+				<h1 ng-bind="title"></h1>
+				<input ng-model="name" />
+			</div>
+			<button class="btn btn-info" ng-click="clickMe()">Click Me</button>
 		</div>
-		<button class="btn btn-info" ng-click="clickMe()">Click Me</button>
-	</div>
+	</div> 
 	<script src="AngularApp/app/cart/cart.js"></script>
 	<script src="AngularApp/app/home/home.js"></script>
 	<script src="AngularApp/app/home/homeCtrl.js"></script>
 	<script src="AngularApp/app/login/login.js"></script>
 	<script src="AngularApp/app/register/register.js"></script>
 	<script src="AngularApp/app/app.js"></script>
+	<script src="AngularApp/app/main/mainCtrl.js"></script>
 	</body>
 </html>
